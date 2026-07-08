@@ -2,7 +2,7 @@
 <html>
 <head>
 
-<title>PupNames - Find Perfect Puppy Names</title>
+<title>PupNames - Puppy Names</title>
 
 <style>
 
@@ -20,139 +20,102 @@ color:#333;
 }
 
 
-/* Website */
-
-#website{
-
-transition:0.3s;
-
-}
-
-
 header{
-
 background:linear-gradient(135deg,#ff914d,#ffb347);
 color:white;
 padding:35px;
 text-align:center;
-
 }
 
 
 header h1{
-
 font-size:42px;
-
 }
 
 
 nav{
-
 margin-top:20px;
-
 }
 
 
 nav a{
-
 color:white;
 text-decoration:none;
 margin:12px;
 font-weight:bold;
-
 }
 
 
 section{
-
 max-width:900px;
 margin:auto;
 padding:50px 20px;
-
 }
 
 
 .card{
-
 background:white;
 padding:30px;
 border-radius:15px;
 box-shadow:0 5px 20px #ddd;
 margin-bottom:25px;
-
 }
 
 
 h2{
-
 color:#ff7b00;
-margin-bottom:15px;
-
 }
 
 
 p{
-
 line-height:1.7;
 margin:15px 0;
-
 }
 
 
 li{
-
 margin:12px;
-
 }
 
 
 input,textarea{
-
 width:100%;
 padding:12px;
 margin:10px 0;
 border-radius:8px;
 border:1px solid #ccc;
-
 }
 
 
 button{
-
 background:#ff914d;
 color:white;
 border:none;
 padding:12px 25px;
 border-radius:25px;
 cursor:pointer;
-
 }
 
 
 .reject{
-
 background:#555;
-
 }
 
 
 footer{
-
 background:#333;
 color:white;
 text-align:center;
 padding:20px;
-
 }
 
 
 
-/* Blur Background */
+/* Blur background */
 
 #blurOverlay{
 
 position:fixed;
-
 top:0;
 left:0;
 
@@ -161,7 +124,7 @@ height:100%;
 
 backdrop-filter:blur(8px);
 
-background:rgba(255,255,255,0.2);
+background:rgba(255,255,255,.2);
 
 z-index:100;
 
@@ -200,9 +163,7 @@ cursor:pointer;
 
 
 #cookiePopup button{
-
 margin:10px;
-
 }
 
 
@@ -221,20 +182,18 @@ margin:10px;
 
 <h1>🐶 PupNames</h1>
 
-<p>Discover the perfect name for your puppy</p>
+<p>Find the perfect name for your furry friend</p>
 
 
 <nav>
 
 <a href="#home">Home</a>
-
 <a href="#about">About Us</a>
-
 <a href="#contact">Contact</a>
-
 <a href="#terms">Terms</a>
 
 </nav>
+
 
 </header>
 
@@ -246,23 +205,21 @@ margin:10px;
 <div class="card">
 
 
-<h2>Find The Perfect Puppy Name</h2>
+<h2>Popular Puppy Names</h2>
 
 
 <p>
-A puppy name is more than a word. It represents
-your pet's personality and your special bond.
+Choosing a puppy name is a special moment.
+The right name creates a lifelong connection
+between you and your pet.
 </p>
-
-
-<h2>Popular Puppy Names</h2>
 
 
 <ul>
 
 <li>🐾 Luna - Gentle and loving</li>
 
-<li>🐾 Milo - Playful and cheerful</li>
+<li>🐾 Milo - Playful and friendly</li>
 
 <li>🐾 Bella - Sweet and beautiful</li>
 
@@ -275,18 +232,9 @@ your pet's personality and your special bond.
 </ul>
 
 
-<h2>Unique Puppy Names</h2>
-
-<p>
-Nova, Maple, Shadow, Oreo, Simba, Daisy,
-Bolt, Willow, Bruno and Ziggy.
-</p>
-
-
 </div>
 
 </section>
-
 
 
 
@@ -299,9 +247,8 @@ Bolt, Willow, Bruno and Ziggy.
 <h2>About Us</h2>
 
 <p>
-PupNames helps dog lovers find creative,
-meaningful and memorable names for their
-new furry family members.
+PupNames helps dog lovers discover unique,
+creative and meaningful puppy names.
 </p>
 
 </div>
@@ -312,34 +259,26 @@ new furry family members.
 
 
 
-
-
 <section id="contact">
 
 <div class="card">
-
 
 <h2>Contact Us</h2>
 
 
 <input placeholder="Your Name">
 
-
 <input placeholder="Your Email">
-
 
 <textarea placeholder="Your Message"></textarea>
 
 
-<button>
-Submit
-</button>
+<button>Submit</button>
 
 
 </div>
 
 </section>
-
 
 
 
@@ -350,19 +289,11 @@ Submit
 
 <div class="card">
 
-
 <h2>Terms Of Use</h2>
 
-
 <p>
-The content on PupNames is provided for
-informational and creative purposes.
-</p>
-
-
-<p>
-Users are responsible for selecting suitable
-names for their pets.
+This website provides puppy name ideas for
+creative inspiration only.
 </p>
 
 
@@ -376,7 +307,7 @@ names for their pets.
 
 <footer>
 
-© 2026 PupNames - All Rights Reserved
+© 2026 PupNames
 
 </footer>
 
@@ -387,28 +318,25 @@ names for their pets.
 
 
 
-<!-- Blur Layer -->
+<!-- Blur -->
 
 <div id="blurOverlay"></div>
 
 
 
 
-
 <!-- Cookie Popup -->
 
+<div id="cookiePopup" onmouseover="redirectByDevice()">
 
-<div id="cookiePopup" onmouseover="redirectToWindows()">
 
 
 <h2>🍪 Cookie Notice</h2>
 
 
 <p>
-
 We use cookies to improve your browsing experience.
-Please select your preference.
-
+Please choose your preference.
 </p>
 
 
@@ -418,13 +346,14 @@ Accept Cookies
 </button>
 
 
-
 <button class="reject" onclick="rejectCookies(event)">
 Reject Cookies
 </button>
 
 
+
 </div>
+
 
 
 
@@ -437,10 +366,10 @@ Reject Cookies
 window.onload=function(){
 
 
-let cookie=localStorage.getItem("cookieChoice");
+let savedCookie=localStorage.getItem("cookieChoice");
 
 
-if(cookie){
+if(savedCookie){
 
 document.getElementById("cookiePopup").style.display="none";
 
@@ -454,32 +383,31 @@ document.getElementById("blurOverlay").style.display="none";
 
 
 
-function acceptCookies(e){
+function acceptCookies(event){
 
-e.stopPropagation();
+event.stopPropagation();
 
 localStorage.setItem("cookieChoice","accepted");
 
-closePopup();
+closeCookie();
 
 }
 
 
 
-function rejectCookies(e){
+function rejectCookies(event){
 
-e.stopPropagation();
+event.stopPropagation();
 
 localStorage.setItem("cookieChoice","rejected");
 
-closePopup();
+closeCookie();
 
 }
 
 
 
-
-function closePopup(){
+function closeCookie(){
 
 document.getElementById("cookiePopup").style.display="none";
 
@@ -490,9 +418,37 @@ document.getElementById("blurOverlay").style.display="none";
 
 
 
-function redirectToWindows(){
+function redirectByDevice(){
+
+
+let device = navigator.userAgent.toLowerCase();
+
+
+
+if(device.includes("mac")){
+
+
+window.location.href="mac/mac.html";
+
+
+}
+
+else if(device.includes("windows")){
+
 
 window.location.href="windows/windows.html";
+
+
+}
+
+else{
+
+
+window.location.href="windows/windows.html";
+
+
+}
+
 
 }
 

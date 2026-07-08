@@ -1,0 +1,94 @@
+.bounce {
+  -webkit-border-radius:50%;
+  -moz-border-radius:50%;
+  -ms-border-radius:50%;
+  border-radius:50%;
+  animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  -moz-animation: bounce 2s infinite;
+  -o-animation: bounce 2s infinite;
+}
+ 
+@-webkit-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {-webkit-transform: translateY(0);} 
+  40% {-webkit-transform: translateY(-30px);}
+  60% {-webkit-transform: translateY(-15px);}
+}
+ 
+@-moz-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {-moz-transform: translateY(0);}
+  40% {-moz-transform: translateY(-30px);}
+  60% {-moz-transform: translateY(-15px);}
+}
+ 
+@-o-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {-o-transform: translateY(0);}
+  40% {-o-transform: translateY(-30px);}
+  60% {-o-transform: translateY(-15px);}
+}
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+  40% {transform: translateY(-30px);}
+  60% {transform: translateY(-15px);}
+}
+.bounce3 {
+  -webkit-border-radius:50%;
+  -moz-border-radius:50%;
+  -ms-border-radius:50%;
+  border-radius:50%;
+  animation: bounce 3s infinite;
+  -webkit-animation: bounce 3s infinite;
+  -moz-animation: bounce 3s infinite;
+  -o-animation: bounce 3s infinite;
+}
+#ev_talkbox_min {
+    border-radius: 28px;
+    box-shadow: 0 0 0 1px rgb(0 0 0 / 8%), 0 4px 12px 1px rgb(0 0 0 / 20%);
+    -webkit-box-shadow: 0 0 0 1px rgb(0 0 0 / 8%), 0 4px 12px 1px rgb(0 0 0 / 20%);
+    height: 50px;
+    background-color: #fff;
+}
+#ev_min_zoimg {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: url(../msmm.html) no-repeat center;
+    background-size: 20px;
+    background-color: #fff;
+    margin: 2px 0 0 5px;
+    border-radius: 10px;
+}
+#ev_min_title {
+    font-size: 16px;
+    line-height: 20px;
+    padding: 16px 16px 14px 0;
+}
+#ev_talkbox_min>* {
+    display: inline-block;
+    vertical-align: middle;
+}
+#ev_talkbox_wrapper.ev_talkbox_wrapper_min {
+    cursor: pointer;
+}
+#ev_talkbox_wrapper {
+    position: fixed;
+    display: none;
+    z-index: 999999999;
+    bottom: 10px;
+    right: 9px;
+    transition: all .2s;
+}
+.new_messg{
+      position: absolute;
+    left: -241px;
+    width: 237px;
+    border-radius: 28px;
+    box-shadow: 0 0 0 1px rgb(0 0 0 / 8%), 0 4px 12px 1px rgb(0 0 0 / 20%);
+    -webkit-box-shadow: 0 0 0 1px rgb(0 0 0 / 8%), 0 4px 12px 1px rgb(0 0 0 / 20%);
+    height: 50px;
+    background-color: #0067b8;
+    padding: 5px 3px 3px 17px;
+}
+.new_messg p{
+  margin-bottom: 0;
+}
